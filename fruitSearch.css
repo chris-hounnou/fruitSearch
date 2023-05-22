@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: orange;
+  }
+
+  
+  .search-container {
+   max-width: 500px;
+   background: #fff;
+   margin: 200px auto 0;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0px 1px 5px 3px rgba(red, green, blue, alpha);
+  }
+  .search-container input,
+  .search-container .suggestions {
+    /* TODO */
+    flex: 1;
+    height: 55px;
+    background: transparent;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333
+    
+  }
