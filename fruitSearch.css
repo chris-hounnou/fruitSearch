@@ -1,6 +1,6 @@
-* {
-    box-sizing: border-box;
-  }
+input {
+border: none;
+}
   
   body {
     background-color: orange;
@@ -10,22 +10,48 @@
   .search-container {
    max-width: 500px;
    background: #fff;
-   margin: 200px auto 0;
-   border-radius: 5px;
-   position: relative;
-   box-shadow: 0px 1px 5px 3px rgba(red, green, blue, alpha);
+   margin: 15px auto;
   }
   .search-container input,
   .search-container .suggestions {
     /* TODO */
-    flex: 1;
-    height: 55px;
-    background: transparent;
-    width: 150px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    color: #333
+    width: 100%;
+    background: 100%;
+    background: #fff
     
   }
+
+  .search-container input{
+    background: rgba(255, 255, 255, 0.5);
+    height: 60px;
+    padding: 0 10px;
+}
+.search-container .suggestions {
+    position: absolute;
+    top: 60px;
+}
+
+  ul{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0, 0.2);
+    max-height: 200px;  
+}
+
+ul.has-suggestions{
+    display: block;
+}
+
+ul li{
+    padding: 10px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+}
+ul li:hover{
+    background-color: #e65c00;
+}
+input{
+    border-bottom: solid #e65c00;
+}
